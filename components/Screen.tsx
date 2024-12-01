@@ -5,9 +5,15 @@ import Image from "next/image";
 import { IconsData, IconsDataType } from "@/constant/IconsData";
 import { PopupType } from "@/types/Popup";
 import Jam from "@/components/Jam";
+import Finder from "./popup/Finder";
+import Github from "./popup/Github";
+import Linkedin from "./popup/Linkedin";
+import Instagram from "./popup/Instagram";
 import Safari from "@/components/popup/Safari";
 import Note from "@/components/popup/Note";
+import Spotify from "./popup/Spotify";
 import Setting from "@/components/popup/Setting";
+import Trash from "./popup/Trash";
 
 export default function Screen() {
 	const [popup, setPopup] = React.useState<PopupType>({
@@ -183,6 +189,30 @@ export default function Screen() {
 				</div>
 			</div>
 
+			{popup.finder.open && (
+				<Finder
+					handlerSetPopup={handlerSetPopup}
+					maximize={popup.finder.maximize}
+				/>
+			)}
+			{popup.github.open && (
+				<Github
+					handlerSetPopup={handlerSetPopup}
+					maximize={popup.github.maximize}
+				/>
+			)}
+			{popup.linkedin.open && (
+				<Linkedin
+					handlerSetPopup={handlerSetPopup}
+					maximize={popup.linkedin.maximize}
+				/>
+			)}
+			{popup.instagram.open && (
+				<Instagram
+					handlerSetPopup={handlerSetPopup}
+					maximize={popup.instagram.maximize}
+				/>
+			)}
 			{popup.safari.open && (
 				<Safari
 					handlerSetPopup={handlerSetPopup}
@@ -195,10 +225,22 @@ export default function Screen() {
 					maximize={popup.note.maximize}
 				/>
 			)}
+			{popup.spotify.open && (
+				<Spotify
+					handlerSetPopup={handlerSetPopup}
+					maximize={popup.spotify.maximize}
+				/>
+			)}
 			{popup.setting.open && (
 				<Setting
 					handlerSetPopup={handlerSetPopup}
 					maximize={popup.setting.maximize}
+				/>
+			)}
+			{popup.trash.open && (
+				<Trash
+					handlerSetPopup={handlerSetPopup}
+					maximize={popup.trash.maximize}
 				/>
 			)}
 
