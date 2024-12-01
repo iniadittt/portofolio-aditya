@@ -11,6 +11,22 @@ import Setting from "@/components/popup/Setting";
 
 export default function Screen() {
 	const [popup, setPopup] = React.useState<PopupType>({
+		finder: {
+			open: false,
+			maximize: true,
+		},
+		github: {
+			open: false,
+			maximize: true,
+		},
+		linkedin: {
+			open: false,
+			maximize: true,
+		},
+		instagram: {
+			open: false,
+			maximize: true,
+		},
 		safari: {
 			open: false,
 			maximize: true,
@@ -19,7 +35,15 @@ export default function Screen() {
 			open: false,
 			maximize: true,
 		},
+		spotify: {
+			open: false,
+			maximize: true,
+		},
 		setting: {
+			open: false,
+			maximize: true,
+		},
+		trash: {
 			open: false,
 			maximize: true,
 		},
