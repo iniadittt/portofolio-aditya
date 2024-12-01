@@ -19,39 +19,39 @@ export default function Screen() {
 	const [popup, setPopup] = React.useState<PopupType>({
 		finder: {
 			open: false,
-			maximize: true,
+			maximize: false,
 		},
 		github: {
 			open: false,
-			maximize: true,
+			maximize: false,
 		},
 		linkedin: {
 			open: false,
-			maximize: true,
+			maximize: false,
 		},
 		instagram: {
 			open: false,
-			maximize: true,
+			maximize: false,
 		},
 		safari: {
 			open: false,
-			maximize: true,
+			maximize: false,
 		},
 		note: {
 			open: false,
-			maximize: true,
+			maximize: false,
 		},
 		spotify: {
 			open: false,
-			maximize: true,
+			maximize: false,
 		},
 		setting: {
 			open: false,
-			maximize: true,
+			maximize: false,
 		},
 		trash: {
 			open: false,
-			maximize: true,
+			maximize: false,
 		},
 	});
 
